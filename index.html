@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:#111827;
+      color:#333;
+      line-height:1.6;
+    }
+
+    header{
+      background:#111827;
+      color:white;
+      padding:20px;
+      text-align:center;
+    }
+
+    nav{
+      margin-top:10px;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin:0 15px;
+      font-weight:bold;
+    }
+
+    nav a:hover{
+      color:#38bdf8;
+    }
+
+    section{
+      padding:50px 20px;
+      max-width:1000px;
+      margin:auto;
+    }
+
+    .hero{
+      text-align:center;
+      padding:80px 20px;
+    }
+
+    .hero img{
+      width:180px;
+      height:180px;
+      border-radius:50%;
+      object-fit:cover;
+      margin-bottom:20px;
+      border:5px solid #38bdf8;
+    }
+
+    h2{
+      margin-bottom:20px;
+      color:#111827;
+    }
+
+    .projects{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+    }
+
+    .card{
+      background:white;
+      padding:20px;
+      border-radius:12px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .card img{
+      width:100%;
+      border-radius:10px;
+      margin-bottom:10px;
+    }
+
+    .btn{
+      display:inline-block;
+      margin-top:10px;
+      padding:10px 15px;
+      background:#38bdf8;
+      color:white;
+      text-decoration:none;
+      border-radius:8px;
+    }
+
+    .btn:hover{
+      background:#0284c7;
+    }
+
+    .contact p{
+      margin:10px 0;
+    }
+
+    footer{
+      background:#111827;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>My Portfolio Website</h1>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#cv">CV</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="about">
+    <img src="profile.jpg" alt="My Profile Picture">
+
+    <h2>Hello, Alvan Sameri</h2>
+
+    <p>
+      I am a web developer and designer passionate about creating
+      websites, projects, and digital solutions.
+    </p>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="projects">
+
+      <div class="card">
+        <img src="project1.jpg" alt="Project 1">
+
+        <h3>Farmart Project</h3>
+
+        <p>
+          An online platform connecting farmers and buyers.
+        </p>
+
+        <a href="https://github.com/alvansameri-collab/my-cv.git" class="btn" target="_blank">
+          View on GitHub
+        </a>
+      </div>
+
+      <div class="card">
+        <img src="project2.jpg" alt="Project 2">
+
+        <h3>Portfolio Website</h3>
+
+        <p>
+          My personal portfolio showcasing my skills and projects.
+        </p>
+
+        <a href="https://www.overleaf.com/read/fqvwfhyzhcvt#681e4a" class="btn" target="_blank">
+          View on GitHub
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery">
+    <h2>Image Gallery</h2>
+
+    <div class="projects">
+
+      <div class="card">
+        <img src="image1.jpg" alt="Gallery Image">
+      </div>
+
+      <div class="card">
+        <img src="image2.jpg" alt="Gallery Image">
+      </div>
+
+      <div class="card">
+        <img src="image3.jpg" alt="Gallery Image">
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CV SECTION -->
+  <section id="cv">
+    <h2>My CV</h2>
+
+    <p>
+      Click below to view my LaTeX CV online.
+    </p>
+
+    <a href="https://www.overleaf.com/read/fqvwfhyzhcvt#681e4a" class="btn" target="_blank">
+      View My CV
+    </a>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+
+    <p>Email: alvansameri@email.com</p>
+    <p>Phone: +254 700 000 000</p>
+
+    <a href="https://www.overleaf.com/read/fqvwfhyzhcvt#681e4a" class="btn" target="_blank">
+      My GitHub
+    </a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 My Portfolio Website</p>
+  </footer>
+
+</body>
+</html>
